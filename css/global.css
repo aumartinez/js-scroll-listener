@@ -45,10 +45,28 @@ h2 {
 }
 
 .box.fade-in{
+  background-color: green;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 2s, background-color 2s;
 }
 
 .box.fade-in.active {
+  background-color: orange;
   opacity: 1;
+}
+
+.cont-fade-in.active {
+  animation: fade-in 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }  
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
