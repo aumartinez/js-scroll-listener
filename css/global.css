@@ -27,3 +27,13 @@ h2 {
   float: none;
   margin: auto;
 }
+
+.container {
+  margin-bottom: 60px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #555;
+}
