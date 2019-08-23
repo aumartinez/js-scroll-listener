@@ -3,6 +3,7 @@
 function run() {
   let elems = document.querySelectorAll("*");
   let spyelems = [];
+  let elemPosition;
   
   //Get all spy elements  
   for (let i = 0; i < elems.length; i++) {
@@ -11,18 +12,16 @@ function run() {
     }
   }
   
-  elemsArr(spyelems);  
-}
-
-function elemsArr(arr) {
-  let elempos;
+  window.addEventListener("scroll", function(){checkPosition(spyelems[0]);}, false);
   
-  for (let i = 0; i < arr.length; i++) {
-    getElemsPos(arr[i]);
-  }
 }
 
-function getElemsPos(elem) {
+function checkPosition(elem) {
+  let elemPosition = elem.offsetTop - window.innerHeight - window.scrollY;
+  
+  if (elemPosition < (0 - (elem.offsetHeight/2))) {
+    
+  }
   
 }
 
