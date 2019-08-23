@@ -8,6 +8,20 @@ body {
   color: #333;
 }
 
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 2em;
+}
+
 .col-center {
   float: none;
   margin: auto;
