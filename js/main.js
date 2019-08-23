@@ -21,7 +21,7 @@ function run() {
 
 function checkPosition(elem) {
   //Calculate element position  
-  let elemPosition
+  let elemPosition;
   
   if(window.scrollY){
      elemPosition = elem.offsetTop - window.innerHeight - window.scrollY;
