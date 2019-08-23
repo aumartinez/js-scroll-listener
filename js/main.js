@@ -3,7 +3,6 @@
 function run() {
   let elems = document.querySelectorAll("*");
   let spyelems = [];
-  let elemPosition;
   
   //Get all spy elements  
   for (let i = 0; i < elems.length; i++) {
@@ -12,6 +11,7 @@ function run() {
     }
   }
   
+  //Add window listener and check element position
   for (let i = 0; i < spyelems.length; i++) {
     window.addEventListener("scroll", function(){checkPosition(spyelems[i])}, false);
   }
@@ -19,8 +19,10 @@ function run() {
 }
 
 function checkPosition(elem) {
+  //Calculate element position
   let elemPosition = elem.offsetTop - window.innerHeight - window.scrollY;
   
+  //If element is visible in the current window add "active" class to animate
   if (elemPosition < (0 - (elem.offsetHeight/2))) {
     addClass(elem, "active");    
   }
