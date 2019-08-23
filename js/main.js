@@ -14,7 +14,7 @@ function run() {
   //Add window listener and check element position
   for (let i = 0; i < spyelems.length; i++) {
     let e = spyelems[i];
-    window.addEventListener("load", function(){checkPosition(e)}, false);
+    checkPosition(e);
     window.addEventListener("scroll", function(){checkPosition(e)}, false);
   }
   
