@@ -37,7 +37,7 @@ function addClass(elem, newClass) {
     let i = arr.indexOf(newClass);
     if (i == -1) {
       arr.push(newClass);
-      elem.clasName = arr.join(" ");
+      elem.className = arr.join(" ");
     }
   }
 }
