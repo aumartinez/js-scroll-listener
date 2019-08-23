@@ -8,4 +8,18 @@ Using JS and setting up the elements to animate with a data attribute, a window 
 
 Then you can use the .active class selector to apply a transition or animation to the HTML element.
 
+The trick is to create an array with all the elements and filter the ones with the attribute <code>data-spy="scroll"</code>, the below JS script does the job:
+
+```Javascript
+  let elems = document.querySelectorAll("*");
+  let spyelems = [];
+  
+  //Get all spy elements  
+  for (let i = 0; i < elems.length; i++) {
+    if (elems[i].dataset.spy == "scroll") {
+      spyelems.push(elems[i]);      
+    }
+  }
+```
+
 You may review a working sample at: http://accedo-gps.000webhostapp.com/demo/js-scroll-listener/
