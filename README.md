@@ -13,7 +13,8 @@ Then you can use the .active class selector to apply a transition or animation t
 
 <div class="cont-fade-in" data-spy="scroll">
   <p>
-    This paragraph will be displayed with a fade in effect and translated from below. For the animation we will use keyframes.
+    This paragraph will be displayed with a fade in effect and translated from below. 
+    For the animation we will use keyframes.
   </p>
 </div>
 
@@ -27,7 +28,8 @@ Once the element is on the screen sight it will change to:
 
 <div class="cont-fade-in active" data-spy="scroll">
   <p>
-    This paragraph will be displayed with a fade in effect and translated from below. For the animation we will use keyframes.
+    This paragraph will be displayed with a fade in effect and translated from below. 
+    For the animation we will use keyframes.
   </p>
 </div>
 
