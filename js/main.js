@@ -54,4 +54,4 @@ function addClass(elem, newClass) {
   }
 }
 
-window.onload = run;
+window.addEventListener("load", run, false);
